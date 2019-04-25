@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 .btns input{
 	outline:0 none !important;
 	margin-top: 10px;
@@ -8,3 +10,18 @@
 	font-size: 18px;
 	border-radius: 100px/40px;
 }
+
+#inp{
+	font-family: 'Press Start 2P', cursive;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 415px;
+	height: 61px;
+	font-size: 21px;
+	color: white;
+	background: blue;
+}
+
+input::placeholder { 
+	color: white; 
+} 
