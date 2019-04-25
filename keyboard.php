@@ -3,7 +3,7 @@
 	<div class="image">
 	<!--<img src="images/kassa.jpeg" alt="">-->	
 	<br><br>
-		<input id="inp" disabled type="text" placeholder="0" name="input" size="46" style="text-align: right;"> 
+		<input id="inp" disabled  type="text" placeholder="0" name="input" size="46" style="text-align: right;"> 
 	<br><br><br><br>
 	</div>
 	

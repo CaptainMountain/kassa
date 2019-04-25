@@ -25,3 +25,7 @@
 input::placeholder { 
 	color: white; 
 } 
+input::readonly { 
+	color: white; 
+	
+} 
