@@ -53,6 +53,6 @@
 
 <script>
     function removeMess(th) {
-        document.getElementById('changeview').innerHTML='<div class="screentext">ТИП ДОКУМЕНТА: ПРИХОД</div>'
+        document.getElementById('changeview').innerHTML='<div class="screentext">&nbspТИП ДОКУМЕНТА: <br> <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ПРИХОД</div>'
     }
 </script>
