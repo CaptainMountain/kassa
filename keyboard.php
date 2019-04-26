@@ -18,7 +18,7 @@
 		<input type="button" name="four" value="4" OnClick="calc.input.value += '4'">
 		<input type="button" name="five" value="5" OnClick="calc.input.value += '5'">
 		<input type="button" name="six" value="6" OnClick="calc.input.value += '6'">
-		<input type="button" name="vz" value="ВЗ"style="background: #434755; color: white;" onclick="document.getElementById('changeview').innerHTML='ТИП ДОКУМЕНТА: ПРИХОД' ">
+		<input type="button" name="vz" value="ВЗ"style="background: #434755; color: white;" onclick="removeMess(this) ">
 		<input type="button" name="procent" value="%"style="background: #434755; color: white;">
 		<input type="button" name="clear" value="С" style="background: #FF2727; color: white;" OnClick="calc.input.value = ''">
 		<br>
@@ -44,10 +44,15 @@
 	
 
 </form>
-	
 
 
 
 
 
 
+
+<script>
+    function removeMess(th) {
+        document.getElementById('changeview').innerHTML='<div class="screentext">ТИП ДОКУМЕНТА: ПРИХОД</div>'
+    }
+</script>

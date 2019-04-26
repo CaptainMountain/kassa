@@ -16,7 +16,7 @@
 	padding-right: 10px;
 	padding-left: 10px;
 	width: 415px;
-	height: 81px;
+	height: 80px;
 	font-size: 21px;
 	color: white;
 	background: blue;
@@ -26,16 +26,14 @@ input::placeholder {
 	color: white; 
 } 
 
-#changeview{
+
+.screentext{
 	font-family: 'Press Start 2P', cursive;
 	width: 415px;
-	height: 81px;
+	height: 65px;
 	background: blue;
 	font-size: 21px;
 	color: white;
+	padding-top: 15px;
 	text-align: center;
-}
-
-input::onclick{
-	padding-top: 10px;
 }
