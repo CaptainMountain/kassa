@@ -1,13 +1,23 @@
-<link rel="stylesheet" href="main.css">
 
-<form name="calc" action="" method="POST">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Меркурий 185Ф</title>
+
+	<link rel="stylesheet" href="main.css">
+
+	
+</head>
+<body>
+
+	<form name="calc" action="" method="POST">
 
 	<div class="image">
 	<!--<img src="images/kassa.jpeg" alt="">-->	
 	<br><br>
-		<div id="changeview">
-			<div id="tagname">&nbspКАССОВЫЙ РЕЖИМ</div>
-		</div> 
+		<div id="changeview"><input id="inp" disabled  type="text" placeholder="0" name="input" size="46" style="text-align: right;"></div> 
 	<br><br><br><br>
 	</div>
 	
@@ -22,15 +32,15 @@
 		<input type="button" name="four" value="4" OnClick="calc.input.value += '4'">
 		<input type="button" name="five" value="5" OnClick="calc.input.value += '5'">
 		<input type="button" name="six" value="6" OnClick="calc.input.value += '6'">
-		<input type="button" name="vz" value="ВЗ"style="background: #434755; color: white;" onclick="removeMess1(this) ">
+		<input type="button" name="vz" value="ВЗ"style="background: #434755; color: white;" onclick="removeMess(this) ">
 		<input type="button" name="procent" value="%"style="background: #434755; color: white;">
 		<input type="button" name="clear" value="С" style="background: #FF2727; color: white;" OnClick="calc.input.value = ''">
 		<br>
 		<input type="button" name="one" value="1" OnClick="calc.input.value += '1'">
 		<input type="button" name="two" value="2" OnClick="calc.input.value += '2'">
 		<input type="button" name="three" value="3" OnClick="calc.input.value += '3'">
-		<input type="button" name="add" value="+" style="background: #818790;" onclick="location.href='otch-fn.php'">
-		<input type="button" id="minus" name="sub" value="-"style="background: #818790;" onclick="location.href='prog-baz.php'">
+		<input type="button" name="add" value="+" style="background: #818790;" OnClick="calc.input.value += '+'">
+		<input type="button" name="sub" value="-"style="background: #818790;" OnClick="calc.input.value += '-'">
 		<input type="button" name="pi" value="ПИ"style="background: green; color: white;">
 		
 		<br>
@@ -53,11 +63,17 @@
 
 
 
-<!--
-<script>
-    function removeMess1(th) {
-        document.getElementById('changeview').innerHTML='<div class="screentext">&nbspПРОГРАММИРОВ. БАЗ</div>';
-    }
 
-  
-</script>-->
+
+<script>
+    function removeMess(th) {
+        document.getElementById('changeview').innerHTML='<div class="screentext">&nbspТИП ДОКУМЕНТА: <br> <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ПРИХОД</div>'
+    }
+</script>
+
+
+</body>
+
+
+</html>
+

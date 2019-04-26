@@ -37,3 +37,13 @@ input::placeholder {
 	padding-top: 15px;
 	text-align: left;
 }
+
+#tagname{
+	font-family: 'Press Start 2P', cursive;
+	width: 415px;
+	height: 75px;
+	font-size: 21px;
+	color: white;
+	background: blue;
+	padding-top: 15px;
+}
