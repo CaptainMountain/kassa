@@ -1,3 +1,36 @@
+
+<?php 
+
+require "libs/rb-mysql.php";
+require "connect.php";
+
+#CREATE DB TAGS
+
+#$mname = R::dispense('main');
+
+#$mname->kass_rej = "КАССОВЫЙ РЕЖИМ";
+#$mname->prog_baz = "ПРОГРАММИРОВ. БАЗ";
+#$mname->prog = "ПРОГРАММИРОВАНИЕ";
+#$mname->otch_fn = "ОТЧЁТЫ ФН";
+#$mname->nefisk_otch = "НЕФИСК. ОТЧЁТЫ";
+#$mname->prog_fn_ofd = "ПРОГ. ФН И ОФД";
+#R::store($mname);
+
+
+$show = R::load('main', 1);
+
+
+
+
+###################################################################################################################
+ ?>
+
+
+
+
+
+
+
 <link rel="stylesheet" href="main.css">
 
 <form name="calc" action="" method="POST">
@@ -6,7 +39,15 @@
 	<!--<img src="images/kassa.jpeg" alt="">-->	
 	<br><br>
 		<div id="changeview">
-			<div id="tagname">&nbspКАССОВЫЙ РЕЖИМ</div>
+			<?php if (isset($_POST['minus'])) {
+			?> 
+			<div id="tagname">&nbsp<?php echo $show->kass_rej; ?></div>
+			<?php 
+
+			} 
+			?>
+			
+			
 		</div> 
 	<br><br><br><br>
 	</div>
@@ -30,7 +71,7 @@
 		<input type="button" name="two" value="2" OnClick="calc.input.value += '2'">
 		<input type="button" name="three" value="3" OnClick="calc.input.value += '3'">
 		<input type="button" name="add" value="+" style="background: #818790;" onclick="location.href='otch-fn.php'">
-		<input type="button" id="minus" name="sub" value="-"style="background: #818790;" onclick="location.href='prog-baz.php'">
+		<input type="submit" id="minus" name="minus" value="-"style="background: #818790;" >
 		<input type="button" name="pi" value="ПИ"style="background: green; color: white;">
 		
 		<br>
@@ -42,7 +83,7 @@
 		<input type="button" name="dot" value="." OnClick="calc.input.value += '.'">
 		<input type="button" name="mul" value="x"style="background: #818790;" OnClick="calc.input.value += '*'">
 		<input type="button" name="kod" value="КОД"style="background: green; color: white;">
-		<input type="button" name="it" value="ИТ"style="background: #5EABEA; color: white;">
+		<input type="submit" name="it" value="ИТ"style="background: #5EABEA; color: white;" onclick="it(this) ">
 	</div>
 		
 	
@@ -55,9 +96,10 @@
 
 <!--
 <script>
-    function removeMess1(th) {
-        document.getElementById('changeview').innerHTML='<div class="screentext">&nbspПРОГРАММИРОВ. БАЗ</div>';
+    function it(th) {
+        document.getElementById('changeview').innerHTML='<div class="screentext">&nbspКАССОВЫЙ РЕЖИМ ПАРОЛЬ:</div>'
     }
 
   
-</script>-->
+</script>
+-->
